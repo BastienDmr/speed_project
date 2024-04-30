@@ -15,14 +15,45 @@ function App() {
     <>
       <Header wines={wines} />
       <section className="Container">
-        {wines.map((element) => (
-          <Card
-            vin={element}
-            key={element.id}
-            updateWines={updateWines}
-            wines={wines}
-          />
-        ))}
+        <h2>Nos rouges :</h2>
+        <div>
+          {wines
+            .filter((element) => element.type === "Rouge")
+            .map((filterWine) => (
+              <Card
+                vin={filterWine}
+                key={filterWine.id}
+                updateWines={updateWines}
+                wines={wines}
+              />
+            ))}
+        </div>
+        <h2>Nos Blancs:</h2>
+        <div>
+          {wines
+            .filter((element) => element.type === "Blanc")
+            .map((filterWine) => (
+              <Card
+                vin={filterWine}
+                key={filterWine.id}
+                updateWines={updateWines}
+                wines={wines}
+              />
+            ))}
+        </div>
+        <h2>Nos rosés:</h2>
+        <div>
+          {wines
+            .filter((element) => element.type === "Rosé")
+            .map((filterWine) => (
+              <Card
+                vin={filterWine}
+                key={filterWine.id}
+                updateWines={updateWines}
+                wines={wines}
+              />
+            ))}
+        </div>
       </section>
     </>
   );
