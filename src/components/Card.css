@@ -22,5 +22,15 @@
     img {
       width: 80%;
     }
+    button {
+      background-color: whitesmoke;
+      padding: 0.5rem;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+    }
   }
 }
