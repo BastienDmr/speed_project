@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import data from "./assets/data/data";
 import Card from "./components/Card";
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 function App() {
   const [wines, setWines] = useState(data);
@@ -55,6 +56,7 @@ function App() {
             ))}
         </div>
       </section>
+      <Footer />
     </>
   );
 }

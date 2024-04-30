@@ -1,0 +1,12 @@
+footer {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/vignes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  p {
+    font-size: 1.2rem;
+  }
+}
